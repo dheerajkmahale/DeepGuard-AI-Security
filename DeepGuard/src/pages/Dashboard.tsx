@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { mockAnalysisHistory, type AnalysisRecord } from "@/data/mockAnalysisData";
+import { mockAnalysisHistory, type AnalysisRecord } from "../../../src/data/mockAnalysisData";
 
 const Dashboard = () => {
   const [analysisHistory] = useState<AnalysisRecord[]>(mockAnalysisHistory);
