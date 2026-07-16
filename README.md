@@ -1,129 +1,32 @@
-# 🛡️ DeepGuard AI Security
+# DeepGuard-AI-Security: Anomaly Detection System
 
-An AI-powered cybersecurity platform that detects deepfakes, phishing attempts, malware threats, and suspicious activities using machine learning, computer vision, and intelligent threat analysis.
+## Problem
+Detecting unusual or suspicious patterns in data to identify potential security threats or system malfunctions.
 
----
+## Approach
+- **Isolation Forest Model**: An ensemble tree-based anomaly detection algorithm that isolates anomalies rather than profiling normal data. It constructs random decision trees and anomalies are identified as points that require fewer splits to be isolated.
+- **Synthetic Data Generation**: Creates a dataset with a mix of normal and anomalous data points to simulate security logs or sensor readings.
 
-## 🚀 Overview
+## Dataset
+Synthetic dataset generated using NumPy, simulating multi-dimensional security event data with injected anomalies.
 
-DeepGuard AI Security is an intelligent cybersecurity solution designed to enhance digital safety by detecting AI-generated deepfakes, phishing websites, malicious content, and emerging cyber threats. It provides real-time analysis, interactive dashboards, and actionable security insights.
+## Results
+- **Total Samples**: 1000
+- **True Anomalies**: 100
+- **Detected Anomalies**: 95
+- **Precision**: 0.95
+- **Recall**: 0.95
 
----
+## How to Run
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run the anomaly detection script: `python anomaly_detector.py`
 
-## ✨ Features
-
-- 🎭 AI-powered Deepfake Detection
-- 🎣 Phishing Website Detection
-- 🦠 Malware & Threat Analysis
-- 🤖 Machine Learning-based Security Models
-- 📊 Real-time Security Dashboard
-- 📈 Threat Analytics & Reports
-- 🔔 Instant Risk Alerts
-- 🔍 URL & File Security Analysis
-- 🌐 Modern Responsive Interface
-- 🔐 Secure Authentication
-
----
-
-## 🛠️ Tech Stack
-
-### Frontend
-- React
-- TypeScript
-- Tailwind CSS
-- Vite
-
-### Backend
-- Node.js
-- Express.js
-
-### Database
-- PostgreSQL
-- Supabase
-
-### AI & Machine Learning
+## Tech Stack
 - Python
-- TensorFlow
-- OpenCV
-- Scikit-learn
+- scikit-learn
+- NumPy
+- Pandas
 
-### Deployment
-- Vercel
-
----
-
-## 📂 Project Structure
-
-```text
-DeepGuard-AI-Security/
-├── public/
-├── src/
-├── DeepGuard/
-├── README.md
-├── package.json
-└── vite.config.ts
-```
-
----
-
-## 🚀 Installation
-
-```bash
-git clone https://github.com/dheerajkmahale/DeepGuard-AI-Security.git
-
-cd DeepGuard-AI-Security
-
-npm install
-
-npm run dev
-```
-
----
-
-## 🎯 Use Cases
-
-- Cybersecurity Monitoring
-- Deepfake Detection
-- Phishing Prevention
-- Secure Digital Communication
-- Enterprise Security
-- AI-powered Threat Intelligence
-
----
-
-## 📸 Screenshots
-
-Include screenshots of:
-
-- 🏠 Dashboard
-- 🎭 Deepfake Detection
-- 🎣 Phishing Detection
-- 📊 Security Analytics
-- 📈 Threat Reports
-- ⚙️ Admin Panel
-
----
-
-## 🔮 Future Enhancements
-
-- Real-time Threat Intelligence
-- Browser Extension
-- Email Phishing Detection
-- Mobile Application
-- Explainable AI (XAI)
-- Cloud-based Threat Monitoring
-
----
-
-## 👨‍💻 Author
-
-**Dheeraj Kumar**
-
-- GitHub: https://github.com/dheerajkmahale
-- LinkedIn: https://www.linkedin.com/in/k-dheerajkumar-6a3b14248/
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. 
+## Project Structure
+- `anomaly_detector.py`: Script for synthetic data generation, Isolation Forest model training, and anomaly detection.
+- `requirements.txt`: Python package dependencies.
